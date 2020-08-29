@@ -6,12 +6,17 @@ import javafx.stage.Stage;
 
 public class StarterMain extends Application{
 
+    public static void main(String[] args){
+        launch(args);
+    }
+
     //Tworzenie przy uzyciu fxml'a
 
     @Override
     public void start(Stage primaryStage) throws Exception {
         // klasa do uruchamiania korzystajac z StackPaneBuildera
 
+        //ladowanie pliku fxml
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(this.getClass().getResource("fxml/StackPaneWindow.fxml"));
         // parsowanie fxml'a
