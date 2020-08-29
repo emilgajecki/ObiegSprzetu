@@ -1,7 +1,8 @@
-import controller.StackPaneController;
+import controller.MainControler;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.layout.Pane;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 
@@ -19,14 +20,14 @@ public class StarterMain extends Application{
 
         //ladowanie pliku fxml
         FXMLLoader loader = new FXMLLoader();
-        loader.setLocation(this.getClass().getResource("fxml/StackPaneWindow.fxml"));
+        loader.setLocation(this.getClass().getResource("fxml/LoginPage.fxml"));
         // parsowanie fxml'a
-        StackPane stackPane = loader.load();
+        Pane pane = loader.load();
         //odniesienie sie do controllera
         // getController - zwraca z ladowanego sie loadera
-        StackPaneController stackPaneController = loader.getController();
+        MainControler stackPaneController = loader.getController();
 
-        Scene scene = new Scene(stackPane);
+        Scene scene = new Scene(pane);
 
         primaryStage.setScene(scene);
         primaryStage.setTitle("Obieg sprzetu");

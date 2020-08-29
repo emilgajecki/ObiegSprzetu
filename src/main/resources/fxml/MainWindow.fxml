@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.Pane?>
+
+
+<Pane fx:id="main" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainControler">
+   <children>
+      <Button fx:id="newUser" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" text="Dodaj nowego użytkownika" textFill="#f16823" />
+      <Button fx:id="newDevice" layoutX="500.0" layoutY="14.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="162.0" text="Dodaj nowy sprzęt" textFill="#f16823">
+         <opaqueInsets>
+            <Insets top="20.0" />
+         </opaqueInsets>
+      </Button>
+      <Button fx:id="chechUser" layoutX="338.0" layoutY="14.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="162.0" text="Sprawdź użytkownika" textFill="#f16823" />
+      <Button fx:id="checkDevice" layoutX="824.0" layoutY="14.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="162.0" text="Sprawdź sprzęt" textFill="#f16823" />
+      <Button fx:id="seeUser" layoutX="176.0" layoutY="14.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="162.0" text="Pokaż użytkowników" textFill="#f16823" />
+      <Button fx:id="seeDevice" layoutX="662.0" layoutY="14.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="162.0" text="Pokaż sprzęt" textFill="#f16823">
+         <opaqueInsets>
+            <Insets top="20.0" />
+         </opaqueInsets>
+      </Button>
+   </children>
+</Pane>
