@@ -12,7 +12,6 @@ public class StarterMain extends Application{
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        // klasa do uruchamiania korzystajac z StackPaneBuildera
 
         //ladowanie pliku fxml
         FXMLLoader loader = new FXMLLoader();
