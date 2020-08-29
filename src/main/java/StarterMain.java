@@ -1,3 +1,4 @@
+import controller.StackPaneController;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -21,6 +22,9 @@ public class StarterMain extends Application{
         loader.setLocation(this.getClass().getResource("fxml/StackPaneWindow.fxml"));
         // parsowanie fxml'a
         StackPane stackPane = loader.load();
+        //odniesienie sie do controllera
+        // getController - zwraca z ladowanego sie loadera
+        StackPaneController stackPaneController = loader.getController();
 
         Scene scene = new Scene(stackPane);
 

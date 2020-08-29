@@ -4,10 +4,9 @@
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.text.Font?>
 
-
-<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.StackPaneController">
+<StackPane fx:id="loginObieg" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.StackPaneController">
    <children>
-      <Button mnemonicParsing="false" text="Test" textFill="#f16823">
+      <Button fx:id="loginObieg" mnemonicParsing="false" onAction="#onActionButton" text="Zaloguj" textFill="#f16823">
          <font>
             <Font size="18.0" />
          </font>
