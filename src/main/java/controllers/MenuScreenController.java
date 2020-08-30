@@ -1,5 +1,6 @@
 package controllers;
 
+import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.layout.Pane;
@@ -26,6 +27,11 @@ public class MenuScreenController {
         AppController appController = loader.getController();
         appController.setMainControllers(mainControllers);
         mainControllers.setScreen(pane);
+    }
+
+    @FXML
+    public void closeApplication (){
+        Platform.exit();
     }
 
 }

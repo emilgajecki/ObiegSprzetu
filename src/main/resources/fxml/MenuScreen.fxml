@@ -4,14 +4,17 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
-      prefWidth="400.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
-      fx:controller="controllers.MenuScreenController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MenuScreenController">
     <children>
-        <Button layoutX="127.0" layoutY="162.0" mnemonicParsing="false" onAction="#openApplication" text="Wejdź">
+        <Button layoutX="227.0" layoutY="144.0" mnemonicParsing="false" onAction="#openApplication" text="Wejdź" textFill="#f16823">
             <font>
-                <Font size="36.0"/>
+                <Font size="36.0" />
             </font>
         </Button>
+      <Button layoutX="216.0" layoutY="375.0" mnemonicParsing="false" onAction="#closeApplication" text="Zakończ" textFill="#f16823">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Button>
     </children>
 </Pane>
