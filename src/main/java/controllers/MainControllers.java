@@ -17,6 +17,10 @@ public class MainControllers {
     @FXML
         //wywolywana zaraz po konstruktorze
     void initialize() {
+        loadMenuScreen();
+    }
+
+    public void loadMenuScreen() {
         FXMLLoader loader = new FXMLLoader(this.getClass().getResource("/fxml/MenuScreen.fxml"));
         //definicja pane.
         Pane pane = null;
@@ -32,6 +36,8 @@ public class MainControllers {
     }
 
     public void setScreen(Pane pane) {
+        //czyscimy ekrany przed zmiana
+        mainStackPane.getChildren().clear();
         mainStackPane.getChildren().add(pane);
     }
 }

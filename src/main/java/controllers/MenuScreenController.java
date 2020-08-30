@@ -23,6 +23,8 @@ public class MenuScreenController {
         } catch (IOException e) {
             e.printStackTrace();
         }
+        AppController appController = loader.getController();
+        appController.setMainControllers(mainControllers);
         mainControllers.setScreen(pane);
     }
 

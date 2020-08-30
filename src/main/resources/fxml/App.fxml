@@ -8,26 +8,24 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
-      prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
-      fx:controller="controllers.AppController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AppController">
     <children>
         <Label layoutX="222.0" layoutY="33.0" text="Obieg sprzetu">
             <font>
-                <Font size="25.0"/>
+                <Font size="25.0" />
             </font>
         </Label>
-        <Button layoutX="249.0" layoutY="342.0" mnemonicParsing="false" text="WSTECZ">
+        <Button fx:id="backButton" layoutX="249.0" layoutY="342.0" mnemonicParsing="false" text="WSTECZ">
             <font>
-                <Font size="20.0"/>
+                <Font size="20.0" />
             </font>
         </Button>
         <BarChart layoutX="112.0" layoutY="76.0" prefHeight="249.0" prefWidth="377.0">
             <xAxis>
-                <CategoryAxis side="BOTTOM"/>
+                <CategoryAxis side="BOTTOM" />
             </xAxis>
             <yAxis>
-                <NumberAxis side="LEFT"/>
+                <NumberAxis side="LEFT" />
             </yAxis>
         </BarChart>
     </children>
