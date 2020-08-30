@@ -11,6 +11,36 @@ public class AppController {
         mainControllers.loadMenuScreen();
     }
 
+    @FXML
+    public void newUser (){
+
+    }
+
+    @FXML
+    public void newDevice(){
+
+    }
+
+    @FXML
+    public void seeUser(){
+
+    }
+
+    @FXML
+    public void seeDevice(){
+
+    }
+
+    @FXML
+    public void checkUser(){
+
+    }
+
+    @FXML
+    public void checkDevice(){
+
+    }
+
     public void setMainControllers(MainControllers mainControllers) {
         this.mainControllers = mainControllers;
     }

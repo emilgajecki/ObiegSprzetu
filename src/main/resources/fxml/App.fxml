@@ -1,32 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.chart.BarChart?>
-<?import javafx.scene.chart.CategoryAxis?>
-<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AppController">
+<Pane prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AppController">
     <children>
-        <Label layoutX="222.0" layoutY="33.0" text="Obieg sprzetu" textFill="#f16823">
-            <font>
-                <Font size="25.0" />
-            </font>
-        </Label>
-        <Button layoutX="249.0" layoutY="520.0" mnemonicParsing="false" onAction="#backButton" text="WSTECZ" textFill="#f16823">
+        <Button layoutX="14.0" layoutY="310.0" mnemonicParsing="false" onAction="#backButton" prefHeight="44.0" prefWidth="217.0" text="WSTECZ" textFill="#f16823">
             <font>
                 <Font size="20.0" />
             </font>
         </Button>
-        <BarChart layoutX="41.0" layoutY="76.0" prefHeight="437.0" prefWidth="521.0">
-            <xAxis>
-                <CategoryAxis side="BOTTOM" />
-            </xAxis>
-            <yAxis>
-                <NumberAxis side="LEFT" />
-            </yAxis>
-        </BarChart>
+        <Button contentDisplay="TOP" layoutX="14.0" layoutY="7.0" mnemonicParsing="false" onAction="#newUser" prefHeight="44.0" prefWidth="217.0" text="Nowy użytkownik" textAlignment="CENTER" textFill="#f16823">
+            <font>
+                <Font size="20.0" />
+            </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+        </Button>
+        <Button layoutX="14.0" layoutY="158.0" mnemonicParsing="false" onAction="#newDevice" prefHeight="44.0" prefWidth="217.0" text="Nowe urządzenie" textFill="#f16823">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Button>
+        <Button layoutX="14.0" layoutY="58.0" mnemonicParsing="false" onAction="#seeUser" prefHeight="44.0" prefWidth="217.0" text="Użytkownicy" textFill="#f16823">
+            <font>
+                <Font size="20.0" />
+            </font>
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+        </Button>
+        <Button layoutX="14.0" layoutY="209.0" mnemonicParsing="false" onAction="#seeDevice" prefHeight="44.0" prefWidth="217.0" text="Sprzęt" textFill="#f16823">
+            <font>
+                <Font size="20.0" />
+            </font>
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+        </Button>
+        <Button layoutX="14.0" layoutY="108.0" mnemonicParsing="false" onAction="#checkUser" text="Sprawdz użytkownika" textFill="#f16823">
+            <font>
+                <Font size="20.0" />
+            </font>
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+        </Button>
+        <Button layoutX="14.0" layoutY="259.0" mnemonicParsing="false" onAction="#checkDevice" prefHeight="44.0" prefWidth="217.0" text="Sprawdz sprzęt" textFill="#f16823">
+            <font>
+                <Font size="20.0" />
+            </font>
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+        </Button>
     </children>
+    <opaqueInsets>
+        <Insets />
+    </opaqueInsets>
 </Pane>
