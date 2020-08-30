@@ -15,8 +15,8 @@ public class MainControllers {
     private StackPane mainStackPane;
 
     @FXML
-    //wywolywana zaraz po konstruktorze
-    void initialize(){
+        //wywolywana zaraz po konstruktorze
+    void initialize() {
         FXMLLoader loader = new FXMLLoader(this.getClass().getResource("/fxml/MenuScreen.fxml"));
         //definicja pane.
         Pane pane = null;
@@ -25,7 +25,13 @@ public class MainControllers {
         } catch (IOException e) {
             e.printStackTrace();
         }
+        MenuScreenController menuScreenController = loader.getController();
+        menuScreenController.setMainControllers(this);
         //Pane do ekranu głównego
+        setScreen(pane);
+    }
+
+    public void setScreen(Pane pane) {
         mainStackPane.getChildren().add(pane);
     }
 }
