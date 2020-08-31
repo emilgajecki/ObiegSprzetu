@@ -56,4 +56,5 @@ public class AppController {
     public void setMainControllers(MainControllers mainControllers) {
         this.mainControllers = mainControllers;
     }
+
 }

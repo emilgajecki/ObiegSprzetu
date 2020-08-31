@@ -16,9 +16,9 @@ public class MenuScreenController {
     }
 
     @FXML
-    public void openApplication(){
+    public void openApplication() {
         FXMLLoader loader = new FXMLLoader(this.getClass().getResource("/fxml/App.fxml"));
-        Pane pane =null ;
+        Pane pane = null;
         try {
             pane = loader.load();
         } catch (IOException e) {
@@ -31,7 +31,7 @@ public class MenuScreenController {
 
 
     @FXML
-    public void closeApplication (){
+    public void closeApplication() {
         Platform.exit();
     }
 
