@@ -25,6 +25,7 @@ public class AppController {
         } catch (IOException e) {
             e.printStackTrace();
         }
+        // wszystkie okna do mainControllera
         mainControllers.setScreen(pane);
     }
 

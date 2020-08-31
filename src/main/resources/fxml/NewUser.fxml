@@ -76,6 +76,11 @@
       </Label>
       <TextField layoutX="693.0" layoutY="141.0" onAction="#getName" prefHeight="25.0" prefWidth="228.0" />
       <TextField layoutX="693.0" layoutY="190.0" onAction="#getLastName" prefHeight="25.0" prefWidth="228.0" />
+      <Button layoutX="1815.0" layoutY="7.0" mnemonicParsing="false" onAction="#backMenu" text="Wstecz" textFill="#f16823">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
     </children>
     <opaqueInsets>
         <Insets />

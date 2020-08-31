@@ -15,6 +15,10 @@ public class NewUserController {
     private TextField name;
     private TextField lastName;
 
+    @FXML
+    public  void backMenu(){
+
+    }
 
     @FXML
     public void closeApp() {
@@ -34,6 +38,7 @@ public class NewUserController {
         } catch (IOException e) {
             e.printStackTrace();
         }
+
         mainControllers.setScreen(pane);
     }
 

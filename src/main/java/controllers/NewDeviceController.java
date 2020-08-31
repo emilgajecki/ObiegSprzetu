@@ -16,6 +16,7 @@ public class NewDeviceController {
         Platform.exit();
     }
 
+
     @FXML
     public void newUser() {
         FXMLLoader loader = new FXMLLoader(this.getClass().getResource("/fxml/NewUser.fxml"));
@@ -62,4 +63,6 @@ public class NewDeviceController {
     public void getDeviceModel(){
 
     }
+
+
 }
