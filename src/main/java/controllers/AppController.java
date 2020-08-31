@@ -1,5 +1,6 @@
 package controllers;
 
+import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.layout.Pane;
@@ -11,8 +12,8 @@ public class AppController {
     private MainControllers mainControllers;
 
     @FXML
-    public void backButton() {
-        mainControllers.loadMenuScreen();
+    public void closeApp() {
+        Platform.exit();
     }
 
     @FXML

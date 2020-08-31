@@ -7,7 +7,7 @@
 
 <Pane prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AppController">
     <children>
-        <Button layoutX="14.0" layoutY="310.0" mnemonicParsing="false" onAction="#backButton" prefHeight="44.0" prefWidth="217.0" text="WSTECZ" textFill="#f16823">
+        <Button layoutX="14.0" layoutY="310.0" mnemonicParsing="false" onAction="#closeApp" prefHeight="44.0" prefWidth="217.0" text="Zamknij" textFill="#f16823">
             <font>
                 <Font size="20.0" />
             </font>

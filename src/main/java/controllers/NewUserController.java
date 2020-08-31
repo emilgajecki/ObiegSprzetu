@@ -1,33 +1,18 @@
 package controllers;
 
+import javafx.application.Platform;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.layout.Pane;
-
 import java.awt.*;
-import java.io.IOException;
-
-
+\
 public class NewUserController {
 
-    private MainControllers mainControllers;
-    private AppController appController;
     private TextField name;
     private TextField lastName;
 
 
     @FXML
-    public void backButtonUser() {
-        FXMLLoader loader = new FXMLLoader(this.getClass().getResource("/fxml/App.fxml"));
-        Pane pane = null;
-        try {
-            pane = loader.load();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        AppController appController = loader.getController();
-        appController.setMainControllers(mainControllers);
-        mainControllers.setScreen(pane);
+    public void closeApp() {
+        Platform.exit();
     }
 
     @FXML
