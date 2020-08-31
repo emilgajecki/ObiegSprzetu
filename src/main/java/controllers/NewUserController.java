@@ -1,15 +1,10 @@
 package controllers;
 
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.layout.Pane;
 
-import java.io.IOException;
-
-public class AppController {
-
+public class NewUserController {
     private MainControllers mainControllers;
-    private NewUserController newUserController;
+
 
     @FXML
     public void backButton() {
@@ -18,16 +13,8 @@ public class AppController {
 
     @FXML
     public void newUser() {
-        FXMLLoader loader = new FXMLLoader(this.getClass().getResource("/fxml/NewUser.fxml"));
-        Pane pane = null;
-        try {
-            pane = loader.load();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        mainControllers.setScreen(pane);
-    }
 
+    }
 
     @FXML
     public void newDevice() {
@@ -54,7 +41,18 @@ public class AppController {
 
     }
 
+    @FXML
+    public void addLastName() {
+
+    }
+
+    @FXML
+    public void addName() {
+
+    }
+
     public void setMainControllers(MainControllers mainControllers) {
         this.mainControllers = mainControllers;
     }
 }
+
