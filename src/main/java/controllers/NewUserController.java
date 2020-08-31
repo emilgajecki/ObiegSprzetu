@@ -2,8 +2,13 @@ package controllers;
 
 import javafx.fxml.FXML;
 
+import java.awt.*;
+
+
 public class NewUserController {
     private MainControllers mainControllers;
+    private TextField name;
+    private TextField lastName;
 
 
     @FXML
@@ -13,7 +18,6 @@ public class NewUserController {
 
     @FXML
     public void newUser() {
-
     }
 
     @FXML
@@ -51,8 +55,12 @@ public class NewUserController {
 
     }
 
-    public void setMainControllers(MainControllers mainControllers) {
-        this.mainControllers = mainControllers;
+    public TextField getName() {
+        return name;
+    }
+
+    public TextField getLastName() {
+        return lastName;
     }
 }
 

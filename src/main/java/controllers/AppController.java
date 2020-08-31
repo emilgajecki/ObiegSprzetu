@@ -9,7 +9,6 @@ import java.io.IOException;
 public class AppController {
 
     private MainControllers mainControllers;
-    private NewUserController newUserController;
 
     @FXML
     public void backButton() {
