@@ -7,7 +7,7 @@ import javafx.scene.layout.Pane;
 
 import java.io.IOException;
 
-public class AppController {
+public class NewDeviceController {
 
     private MainControllers mainControllers;
 
@@ -28,17 +28,9 @@ public class AppController {
         mainControllers.setScreen(pane);
     }
 
-
     @FXML
     public void newDevice() {
-        FXMLLoader loader = new FXMLLoader(this.getClass().getResource("/fxml/NewDevice.fxml"));
-        Pane pane = null;
-        try {
-            pane = loader.load();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        mainControllers.setScreen(pane);
+
     }
 
     @FXML
@@ -61,8 +53,13 @@ public class AppController {
 
     }
 
-    public void setMainControllers(MainControllers mainControllers) {
-        this.mainControllers = mainControllers;
+    @FXML
+    public void getDeviceName (){
+
     }
 
+    @FXML
+    public void getDeviceModel(){
+
+    }
 }

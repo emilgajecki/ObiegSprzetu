@@ -2,9 +2,15 @@ package controllers;
 
 import javafx.application.Platform;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.layout.Pane;
+
 import java.awt.*;
-\
+import java.io.IOException;
+
 public class NewUserController {
+
+    private MainControllers mainControllers;
 
     private TextField name;
     private TextField lastName;
@@ -21,7 +27,14 @@ public class NewUserController {
 
     @FXML
     public void newDevice() {
-
+        FXMLLoader loader = new FXMLLoader(this.getClass().getResource("/fxml/NewDevice.fxml"));
+        Pane pane = null;
+        try {
+            pane = loader.load();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        mainControllers.setScreen(pane);
     }
 
     @FXML
