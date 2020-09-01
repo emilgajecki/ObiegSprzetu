@@ -17,7 +17,7 @@ public class NewUserController {
 
     @FXML
     public  void backMenu(){
-
+        mainControllers.loadMenuScreen();
     }
 
     @FXML

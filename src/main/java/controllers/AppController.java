@@ -62,6 +62,11 @@ public class AppController {
 
     }
 
+    @FXML
+    public void backMenu(){
+        mainControllers.loadMenuScreen();
+    }
+
     public void setMainControllers(MainControllers mainControllers) {
         this.mainControllers = mainControllers;
     }
