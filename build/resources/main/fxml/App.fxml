@@ -57,6 +57,11 @@
                 <Insets />
             </opaqueInsets>
         </Button>
+      <Button layoutX="1815.0" layoutY="14.0" mnemonicParsing="false" onAction="#backMenu" text="Wstecz" textFill="#f16823">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
     </children>
     <opaqueInsets>
         <Insets />

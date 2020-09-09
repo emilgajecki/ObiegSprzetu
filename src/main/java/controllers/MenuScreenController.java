@@ -29,9 +29,4 @@ public class MenuScreenController {
         mainControllers.setScreen(pane);
     }
 
-    @FXML
-    public void closeApplication (){
-        Platform.exit();
-    }
-
 }

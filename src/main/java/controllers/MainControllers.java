@@ -12,7 +12,7 @@ public class MainControllers {
 
     //dodajemy nasze główne okno - to ono będzie sie zmieniało
     @FXML
-    private Pane mainStackPane;
+    private StackPane mainStackPane;
 
     @FXML
         //wywolywana zaraz po konstruktorze

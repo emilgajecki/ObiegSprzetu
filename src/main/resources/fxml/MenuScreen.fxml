@@ -6,15 +6,10 @@
 
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MenuScreenController">
     <children>
-        <Button layoutX="226.0" layoutY="138.0" mnemonicParsing="false" onAction="#openApplication" text="Wejdź" textFill="#f16823">
+        <Button layoutX="224.0" layoutY="275.0" mnemonicParsing="false" onAction="#openApplication" prefHeight="50.0" prefWidth="153.0" text="Wejdź" textFill="#f16823">
             <font>
-                <Font size="36.0" />
+                <Font size="20.0" />
             </font>
         </Button>
-      <Button layoutX="209.0" layoutY="367.0" mnemonicParsing="false" onAction="#closeApplication" text="Zakończ" textFill="#f16823">
-         <font>
-            <Font size="36.0" />
-         </font>
-      </Button>
     </children>
 </Pane>
