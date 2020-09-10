@@ -16,15 +16,8 @@ public class NewUserController {
     private TextField lastName;
 
     @FXML
-    public  void backMenu(){
-        FXMLLoader loader = new FXMLLoader(this.getClass().getResource("/fxml/MainScreen.fxml"));
-        Pane pane = null;
-        try {
-            pane = loader.load();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        mainControllers.setScreen(pane);
+    public void backMenu(){
+        mainControllers.loadMenuScreen();
     }
 
 
@@ -35,7 +28,15 @@ public class NewUserController {
 
     @FXML
     public void newUser() {
+     FXMLLoader loader = new FXMLLoader(this.getClass().getResource("/fxml/NewUser.fxml"));
+    Pane pane = null;
+        try {
+        pane = loader.load();
+    } catch (IOException e) {
+        e.printStackTrace();
     }
+        mainControllers.loadMenuScreen();
+}
 
     @FXML
     public void newDevice() {
