@@ -51,33 +51,9 @@ public class NewUserController {
         mainControllers.setScreen(pane);
     }
 
-    @FXML
-    public void seeUser() {
-
-    }
 
     @FXML
-    public void seeDevice() {
-
-    }
-
-    @FXML
-    public void checkUser() {
-
-    }
-
-    @FXML
-    public void checkDevice() {
-
-    }
-
-    @FXML
-    public void addLastName() {
-
-    }
-
-    @FXML
-    public void addName() {
+    public void addUsertoDatabase(){
 
     }
 
