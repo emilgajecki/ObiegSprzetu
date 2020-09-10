@@ -6,7 +6,37 @@
 
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MenuScreenController">
     <children>
-        <Button layoutX="224.0" layoutY="275.0" mnemonicParsing="false" onAction="#openApplication" prefHeight="50.0" prefWidth="153.0" text="Wejdź" textFill="#f16823">
+        <Button layoutX="192.0" layoutY="500.0" mnemonicParsing="false" onAction="#closeApp" prefHeight="44.0" prefWidth="217.0" text="Zamknij" textFill="#f16823">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Button>
+        <Button contentDisplay="TOP" layoutX="33.0" layoutY="135.0" mnemonicParsing="false" onAction="#newUser" prefHeight="44.0" prefWidth="217.0" text="Nowy użytkownik" textAlignment="CENTER" textFill="#f16823">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Button>
+        <Button layoutX="355.0" layoutY="135.0" mnemonicParsing="false" onAction="#newDevice" prefHeight="44.0" prefWidth="217.0" text="Nowe urządzenie" textFill="#f16823">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Button>
+        <Button layoutX="33.0" layoutY="206.0" mnemonicParsing="false" onAction="#seeUser" prefHeight="44.0" prefWidth="217.0" text="Użytkownicy" textFill="#f16823">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Button>
+        <Button layoutX="355.0" layoutY="206.0" mnemonicParsing="false" onAction="#seeDevice" prefHeight="44.0" prefWidth="217.0" text="Sprzęt" textFill="#f16823">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Button>
+        <Button layoutX="33.0" layoutY="278.0" mnemonicParsing="false" onAction="#checkUser" text="Sprawdz użytkownika" textFill="#f16823">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Button>
+        <Button layoutX="355.0" layoutY="278.0" mnemonicParsing="false" onAction="#checkDevice" prefHeight="44.0" prefWidth="217.0" text="Sprawdz sprzęt" textFill="#f16823">
             <font>
                 <Font size="20.0" />
             </font>
