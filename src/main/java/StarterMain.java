@@ -19,7 +19,7 @@ public class StarterMain extends Application{
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(this.getClass().getResource("/fxml/MainScreen.fxml"));
         StackPane stackPane = loader.load();
-        Scene scene = new Scene(stackPane , 600,600 );
+        Scene scene = new Scene(stackPane , 1900,1000 );
         primaryStage.setScene(scene);
         primaryStage.setTitle("Obieg sprzetu");
         primaryStage.setMaximized(true);

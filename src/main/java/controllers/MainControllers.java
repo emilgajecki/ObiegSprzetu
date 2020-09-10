@@ -21,7 +21,7 @@ public class MainControllers {
     }
 
     public void loadMenuScreen() {
-        FXMLLoader loader = new FXMLLoader(this.getClass().getResource("/fxml/MenuScreen.fxml"));
+        FXMLLoader loader = new FXMLLoader(this.getClass().getResource("/fxml/App.fxml"));
         //definicja pane.
         Pane pane = null;
         try {
@@ -29,8 +29,10 @@ public class MainControllers {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        MenuScreenController menuScreenController = loader.getController();
-        menuScreenController.setMainControllers(this);
+        AppController appController = loader.getController();
+        appController.setMainControllers(this);
+//        MenuScreenController menuScreenController = loader.getController();
+ //       menuScreenController.setMainControllers(this);
         //Pane do ekranu głównego
         setScreen(pane);
     }

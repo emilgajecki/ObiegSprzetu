@@ -26,7 +26,7 @@ public class NewDeviceController {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        mainControllers.setScreen(pane);
+        mainControllers.loadMenuScreen();
     }
 
     @FXML

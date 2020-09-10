@@ -17,8 +17,16 @@ public class NewUserController {
 
     @FXML
     public  void backMenu(){
-        mainControllers.loadMenuScreen();
+        FXMLLoader loader = new FXMLLoader(this.getClass().getResource("/fxml/MainScreen.fxml"));
+        Pane pane = null;
+        try {
+            pane = loader.load();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        mainControllers.setScreen(pane);
     }
+
 
     @FXML
     public void closeApp() {
