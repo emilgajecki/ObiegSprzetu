@@ -1,14 +1,11 @@
 package controllers;
 
-
 import javafx.fxml.FXML;
 import java.awt.*;
-
 
 public class NewUserController {
 
     private MainControllers mainControllers;
-
     private TextField name;
     private TextField lastName;
 

@@ -21,7 +21,7 @@ public class MainControllers {
     }
 
     public void loadMenuScreen() {
-        FXMLLoader loader = new FXMLLoader(this.getClass().getResource("/fxml/MainScreen.fxml"));
+        FXMLLoader loader = new FXMLLoader(this.getClass().getResource("/fxml/MenuScreen.fxml"));
         //definicja pane.
         Pane pane = null;
         try {
