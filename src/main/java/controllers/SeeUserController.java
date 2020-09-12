@@ -1,10 +1,10 @@
 package controllers;
 
 import javafx.fxml.FXML;
+
 import java.awt.*;
 
-public class NewUserController {
-
+public class SeeUserController {
     private MainControllers mainControllers;
     private TextField name;
     private TextField lastName;
@@ -20,7 +20,7 @@ public class NewUserController {
     }
 
     @FXML
-    public void addUserToDatabase(){
+    public void checkUserInDatabase(){
     }
 
     public TextField getName() {
@@ -31,4 +31,3 @@ public class NewUserController {
         return lastName;
     }
 }
-

@@ -31,7 +31,7 @@
       </Label>
       <TextField layoutX="265.0" layoutY="97.0" onAction="#getName" prefHeight="25.0" prefWidth="228.0" />
       <TextField layoutX="265.0" layoutY="146.0" onAction="#getLastName" prefHeight="25.0" prefWidth="228.0" />
-      <Button layoutX="282.0" layoutY="220.0" mnemonicParsing="false" onAction="#addUsertoDatabase" text="Dodaj użytkownika" textFill="#f16823">
+      <Button layoutX="282.0" layoutY="220.0" mnemonicParsing="false" onAction="#addUserToDatabase" text="Dodaj użytkownika" textFill="#f16823">
          <font>
             <Font size="20.0" />
          </font>

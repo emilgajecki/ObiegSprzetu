@@ -44,11 +44,23 @@ public class MenuScreenController {
         } catch (IOException e) {
             e.printStackTrace();
         }
+        NewDeviceController newDeviceController = loader.getController();
+        newDeviceController.setMainControllers(mainControllers);
         mainControllers.setScreen(pane);
     }
 
     @FXML
     public void seeUser() {
+        FXMLLoader loader = new FXMLLoader(this.getClass().getResource("/fxml/SeeUser.fxml"));
+        Pane pane = null;
+        try {
+            pane = loader.load();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        SeeUserController seeUserController= loader.getController();
+        seeUserController.setMainControllers(mainControllers);
+        mainControllers.setScreen(pane);
 
     }
 
