@@ -29,6 +29,8 @@ public class MenuScreenController {
         } catch (IOException e) {
             e.printStackTrace();
         }
+        NewUserController newUserController = loader.getController();
+        newUserController.setMainControllers(mainControllers);
         // wszystkie okna do mainControllera
         mainControllers.setScreen(pane);
     }

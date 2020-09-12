@@ -9,6 +9,11 @@ public class NewUserController {
     private TextField name;
     private TextField lastName;
 
+
+    public void setMainControllers(MainControllers mainControllers) {
+        this.mainControllers = mainControllers;
+    }
+
     @FXML
     public void backMenu(){
         mainControllers.loadMenuScreen();
@@ -16,7 +21,6 @@ public class NewUserController {
 
     @FXML
     public void addUsertoDatabase(){
-
     }
 
     public TextField getName() {
