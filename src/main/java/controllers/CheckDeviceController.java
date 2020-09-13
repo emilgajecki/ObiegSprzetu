@@ -8,7 +8,7 @@ import javafx.scene.layout.Pane;
 import java.awt.*;
 import java.io.IOException;
 
-public class SeeUserController {
+public class CheckDeviceController {
     private MainControllers mainControllers;
     private TextField name;
     private TextField lastName;
@@ -151,3 +151,4 @@ public class SeeUserController {
 
 
 }
+

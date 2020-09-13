@@ -8,28 +8,12 @@ import javafx.scene.layout.Pane;
 import java.awt.*;
 import java.io.IOException;
 
-public class SeeUserController {
+public class BlockUserController {
     private MainControllers mainControllers;
-    private TextField name;
-    private TextField lastName;
-
 
     public void setMainControllers(MainControllers mainControllers) {
         this.mainControllers = mainControllers;
     }
-
-    @FXML
-    public void checkUserInDatabase(){
-    }
-
-    public TextField getName() {
-        return name;
-    }
-
-    public TextField getLastName() {
-        return lastName;
-    }
-
     @FXML
     public void closeApp() {
         Platform.exit();
@@ -147,7 +131,5 @@ public class SeeUserController {
         blockDeviceController.setMainControllers(mainControllers);
         mainControllers.setScreen(pane);
     }
-
-
 
 }

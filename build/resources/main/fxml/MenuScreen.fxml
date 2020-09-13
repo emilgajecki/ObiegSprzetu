@@ -7,7 +7,7 @@
 
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1900.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MenuScreenController">
     <children>
-      <MenuBar layoutX="-8.0" layoutY="32.0" prefHeight="25.0" prefWidth="306.0">
+      <MenuBar id="menu" layoutX="-8.0" layoutY="32.0" prefHeight="25.0" prefWidth="306.0">
         <menus>
           <Menu mnemonicParsing="false" text="Nowy">
             <items>
@@ -17,20 +17,20 @@
           </Menu>
           <Menu mnemonicParsing="false" text="Pokaż">
             <items>
-              <MenuItem mnemonicParsing="false" onAction="#seeUser" text="Użytkownika" />
+              <MenuItem mnemonicParsing="false" onAction="#seeUser" text="Użytkowników" />
                   <MenuItem mnemonicParsing="false" onAction="#seeDevice" text="Sprzęt" />
             </items>
           </Menu>
           <Menu mnemonicParsing="false" text="Sprawdź">
             <items>
-              <MenuItem mnemonicParsing="false" text="Użytkownika" />
-                  <MenuItem mnemonicParsing="false" text="Sprzęt" />
+              <MenuItem mnemonicParsing="false" onAction="#checkUser" text="Użytkownika" />
+                  <MenuItem mnemonicParsing="false" onAction="#checkDevice" text="Sprzęt" />
             </items>
           </Menu>
             <Menu mnemonicParsing="false" text="Zablokuj">
                <items>
-                  <MenuItem mnemonicParsing="false" text="Użytkownika" />
-                  <MenuItem mnemonicParsing="false" text="Sprzęt" />
+                  <MenuItem mnemonicParsing="false" onAction="#blockUser" text="Użytkownika" />
+                  <MenuItem mnemonicParsing="false" onAction="#blockDevice" text="Sprzęt" />
                </items>
             </Menu>
             <Menu mnemonicParsing="false" onAction="#closeApp" text="Zamknij">

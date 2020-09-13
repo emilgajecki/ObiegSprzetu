@@ -4,11 +4,10 @@ import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.layout.Pane;
-
 import java.awt.*;
 import java.io.IOException;
 
-public class SeeUserController {
+public class CheckUserController {
     private MainControllers mainControllers;
     private TextField name;
     private TextField lastName;
@@ -151,3 +150,4 @@ public class SeeUserController {
 
 
 }
+

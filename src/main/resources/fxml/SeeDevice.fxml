@@ -28,7 +28,7 @@
                 <Font size="20.0" />
             </font>
         </Label>
-        <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="306.0">
+        <MenuBar id="menu" layoutY="2.0" prefHeight="25.0" prefWidth="306.0">
             <menus>
                 <Menu mnemonicParsing="false" text="Nowy">
                     <items>
@@ -38,20 +38,20 @@
                 </Menu>
                 <Menu mnemonicParsing="false" text="Pokaż">
                     <items>
-                        <MenuItem mnemonicParsing="false" onAction="#seeUser" text="Użytkownika" />
+                        <MenuItem mnemonicParsing="false" onAction="#seeUser" text="Użytkowników" />
                         <MenuItem mnemonicParsing="false" onAction="#seeDevice" text="Sprzęt" />
                     </items>
                 </Menu>
                 <Menu mnemonicParsing="false" text="Sprawdź">
                     <items>
-                        <MenuItem mnemonicParsing="false" text="Użytkownika" />
-                        <MenuItem mnemonicParsing="false" text="Sprzęt" />
+                        <MenuItem mnemonicParsing="false" onAction="#checkUser" text="Użytkownika" />
+                        <MenuItem mnemonicParsing="false" onAction="#checkDevice" text="Sprzęt" />
                     </items>
                 </Menu>
                 <Menu mnemonicParsing="false" text="Zablokuj">
                     <items>
-                        <MenuItem mnemonicParsing="false" text="Użytkownika" />
-                        <MenuItem mnemonicParsing="false" text="Sprzęt" />
+                        <MenuItem mnemonicParsing="false" onAction="#blockUser" text="Użytkownika" />
+                        <MenuItem mnemonicParsing="false" onAction="#blockDevice" text="Sprzęt" />
                     </items>
                 </Menu>
                 <Menu mnemonicParsing="false" onAction="#closeApp" text="Zamknij">

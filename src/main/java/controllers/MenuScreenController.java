@@ -4,7 +4,6 @@ import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.layout.Pane;
-
 import java.io.IOException;
 
 public class MenuScreenController {
@@ -61,7 +60,6 @@ public class MenuScreenController {
         SeeUserController seeUserController= loader.getController();
         seeUserController.setMainControllers(mainControllers);
         mainControllers.setScreen(pane);
-
     }
 
     @FXML
@@ -80,12 +78,58 @@ public class MenuScreenController {
 
     @FXML
     public void checkUser() {
-
+        FXMLLoader loader = new FXMLLoader(this.getClass().getResource("/fxml/CheckUser.fxml"));
+        Pane pane = null;
+        try {
+            pane = loader.load();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        CheckUserController checkUserController = loader.getController();
+        checkUserController.setMainControllers(mainControllers);
+        mainControllers.setScreen(pane);
     }
 
     @FXML
     public void checkDevice() {
+        FXMLLoader loader = new FXMLLoader(this.getClass().getResource("/fxml/CheckDevice.fxml"));
+        Pane pane = null;
+        try {
+            pane = loader.load();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        CheckDeviceController checkDeviceController= loader.getController();
+        checkDeviceController.setMainControllers(mainControllers);
+        mainControllers.setScreen(pane);
+    }
 
+    @FXML
+    public void blockUser(){
+        FXMLLoader loader = new FXMLLoader(this.getClass().getResource("/fxml/BlockUserController.fxml"));
+        Pane pane = null;
+        try {
+            pane = loader.load();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        BlockUserController blockUserController = loader.getController();
+        blockUserController.setMainControllers(mainControllers);
+        mainControllers.setScreen(pane);
+    }
+
+    @FXML
+    public void blockDevice(){
+        FXMLLoader loader = new FXMLLoader(this.getClass().getResource("/fxml/BlockDeviceController.fxml"));
+        Pane pane = null;
+        try {
+            pane = loader.load();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        BlockDeviceController blockDeviceController = loader.getController();
+        blockDeviceController.setMainControllers(mainControllers);
+        mainControllers.setScreen(pane);
     }
 
 }

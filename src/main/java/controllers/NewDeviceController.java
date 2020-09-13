@@ -13,6 +13,30 @@ public class NewDeviceController {
     private TextField deviceName;
     private TextField deviceModel;
 
+    public void setMainControllers(MainControllers mainControllers) {
+        this.mainControllers = mainControllers;
+    }
+
+    @FXML
+    public TextField getDeviceName() {
+        return deviceName;
+    }
+
+    @FXML
+    public TextField getDeviceModel() {
+        return deviceModel;
+    }
+
+    @FXML
+    public void addDeviceToDatabase() {
+
+    }
+
+    @FXML
+    public void closeApp() {
+        Platform.exit();
+    }
+
     @FXML
     public void newUser() {
         FXMLLoader loader = new FXMLLoader(this.getClass().getResource("/fxml/NewUser.fxml"));
@@ -51,57 +75,80 @@ public class NewDeviceController {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        SeeUserController seeUserController = loader.getController();
+        SeeUserController seeUserController= loader.getController();
         seeUserController.setMainControllers(mainControllers);
         mainControllers.setScreen(pane);
-
     }
 
     @FXML
     public void seeDevice() {
-            FXMLLoader loader = new FXMLLoader(this.getClass().getResource("/fxml/seeDevice.fxml"));
-            Pane pane = null;
-            try {
-                pane = loader.load();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-            SeeDeviceConroller seeDeviceConroller = loader.getController();
-            seeDeviceConroller.setMainControllers(mainControllers);
-            mainControllers.setScreen(pane);
+        FXMLLoader loader = new FXMLLoader(this.getClass().getResource("/fxml/seeDevice.fxml"));
+        Pane pane = null;
+        try {
+            pane = loader.load();
+        } catch (IOException e) {
+            e.printStackTrace();
         }
-
+        SeeDeviceConroller seeDeviceConroller = loader.getController();
+        seeDeviceConroller.setMainControllers(mainControllers);
+        mainControllers.setScreen(pane);
+    }
 
     @FXML
     public void checkUser() {
-
+        FXMLLoader loader = new FXMLLoader(this.getClass().getResource("/fxml/CheckUser.fxml"));
+        Pane pane = null;
+        try {
+            pane = loader.load();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        CheckUserController checkUserController = loader.getController();
+        checkUserController.setMainControllers(mainControllers);
+        mainControllers.setScreen(pane);
     }
 
     @FXML
     public void checkDevice() {
-
-    }
-    @FXML
-    public void closeApp() {
-        Platform.exit();
-    }
-
-    public void setMainControllers(MainControllers mainControllers) {
-        this.mainControllers = mainControllers;
-    }
-
-    @FXML
-    public TextField getDeviceName() {
-        return deviceName;
+        FXMLLoader loader = new FXMLLoader(this.getClass().getResource("/fxml/CheckDevice.fxml"));
+        Pane pane = null;
+        try {
+            pane = loader.load();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        CheckDeviceController checkDeviceController= loader.getController();
+        checkDeviceController.setMainControllers(mainControllers);
+        mainControllers.setScreen(pane);
     }
 
     @FXML
-    public TextField getDeviceModel() {
-        return deviceModel;
+    public void blockUser(){
+        FXMLLoader loader = new FXMLLoader(this.getClass().getResource("/fxml/BlockUserController.fxml"));
+        Pane pane = null;
+        try {
+            pane = loader.load();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        BlockUserController blockUserController = loader.getController();
+        blockUserController.setMainControllers(mainControllers);
+        mainControllers.setScreen(pane);
     }
 
     @FXML
-    public void addDeviceToDatabase() {
-
+    public void blockDevice(){
+        FXMLLoader loader = new FXMLLoader(this.getClass().getResource("/fxml/BlockDeviceController.fxml"));
+        Pane pane = null;
+        try {
+            pane = loader.load();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        BlockDeviceController blockDeviceController = loader.getController();
+        blockDeviceController.setMainControllers(mainControllers);
+        mainControllers.setScreen(pane);
     }
+
+
 }
