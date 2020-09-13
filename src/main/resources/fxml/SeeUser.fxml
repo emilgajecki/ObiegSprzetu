@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane prefHeight="600" prefWidth="600" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.SeeUserController">
+<Pane prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.SeeUserController">
     <children>
         <Label layoutX="192.0" layoutY="21.0" prefHeight="30.0" prefWidth="195.0" text="Sprawdź użytkownika " textAlignment="CENTER" textFill="#f16823">
             <font>
