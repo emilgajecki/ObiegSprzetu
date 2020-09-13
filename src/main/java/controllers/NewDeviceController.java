@@ -59,8 +59,18 @@ public class NewDeviceController {
 
     @FXML
     public void seeDevice() {
+            FXMLLoader loader = new FXMLLoader(this.getClass().getResource("/fxml/seeDevice.fxml"));
+            Pane pane = null;
+            try {
+                pane = loader.load();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            SeeDeviceConroller seeDeviceConroller = loader.getController();
+            seeDeviceConroller.setMainControllers(mainControllers);
+            mainControllers.setScreen(pane);
+        }
 
-    }
 
     @FXML
     public void checkUser() {

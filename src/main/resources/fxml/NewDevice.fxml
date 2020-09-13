@@ -12,24 +12,24 @@
 
 <Pane prefHeight="1080.0" prefWidth="1900.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.NewDeviceController">
     <children>
-        <Label layoutX="193.0" layoutY="53.0" text="Dodaj nowego urządzenie" textFill="#f16823">
+        <Label layoutX="751.0" layoutY="246.0" text="Dodaj nowego urządzenie" textFill="#f16823">
             <font>
                 <Font size="20.0" />
             </font>
         </Label>
-        <Label layoutX="75.0" layoutY="125.0" prefHeight="30.0" prefWidth="206.0" text="Marka urządzenia" textFill="#f16823">
+        <Label layoutX="633.0" layoutY="318.0" prefHeight="30.0" prefWidth="206.0" text="Marka urządzenia" textFill="#f16823">
             <font>
                 <Font size="20.0" />
             </font>
         </Label>
-        <Label layoutX="75.0" layoutY="174.0" prefHeight="30.0" prefWidth="206.0" text="Model urządzenia" textFill="#f16823">
+        <Label layoutX="633.0" layoutY="367.0" prefHeight="30.0" prefWidth="206.0" text="Model urządzenia" textFill="#f16823">
             <font>
                 <Font size="20.0" />
             </font>
         </Label>
-        <TextField layoutX="298.0" layoutY="128.0" onAction="#getDeviceName" prefHeight="25.0" prefWidth="228.0" />
-        <TextField layoutX="298.0" layoutY="177.0" onAction="#getDeviceModel" prefHeight="25.0" prefWidth="228.0" />
-      <Button layoutX="308.0" layoutY="256.0" mnemonicParsing="false" onAction="#addDeviceToDatabase" text="Dodaj sprzęt" textFill="#f16823">
+        <TextField layoutX="856.0" layoutY="321.0" onAction="#getDeviceName" prefHeight="25.0" prefWidth="228.0" />
+        <TextField layoutX="856.0" layoutY="370.0" onAction="#getDeviceModel" prefHeight="25.0" prefWidth="228.0" />
+      <Button layoutX="866.0" layoutY="449.0" mnemonicParsing="false" onAction="#addDeviceToDatabase" text="Dodaj sprzęt" textFill="#f16823">
          <font>
             <Font size="20.0" />
          </font>
