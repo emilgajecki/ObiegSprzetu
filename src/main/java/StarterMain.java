@@ -23,7 +23,7 @@ public class StarterMain extends Application{
         Scene scene = new Scene(stackPane , 600,600 );
         primaryStage.setScene(scene);
         primaryStage.setTitle("Obieg sprzetu");
-        //primaryStage.setMaximized(true);
+        primaryStage.setMaximized(true);
         primaryStage.show();
 
     }

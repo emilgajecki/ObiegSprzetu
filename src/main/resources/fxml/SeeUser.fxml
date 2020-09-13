@@ -9,34 +9,34 @@
 
 <Pane prefHeight="600" prefWidth="600" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.SeeUserController">
     <children>
-        <Label layoutX="185.0" layoutY="21.0" prefHeight="30.0" prefWidth="195.0" text="Sprawdź użytkownika " textAlignment="CENTER" textFill="#f16823">
+        <Label layoutX="192.0" layoutY="21.0" prefHeight="30.0" prefWidth="195.0" text="Sprawdź użytkownika " textAlignment="CENTER" textFill="#f16823">
             <font>
                 <Font size="20.0" />
             </font>
         </Label>
-        <Label layoutX="42.0" layoutY="143.0" prefHeight="30.0" prefWidth="206.0" text="Nazwisko użytkownika" textFill="#f16823">
+        <Label layoutX="300.0" layoutY="67.0" prefHeight="30.0" prefWidth="206.0" text="Nazwisko użytkownika" textFill="#f16823">
             <font>
                 <Font size="20.0" />
             </font>
         </Label>
-        <TextField layoutX="265.0" layoutY="97.0" onAction="#getName" prefHeight="25.0" prefWidth="228.0" />
-        <TextField layoutX="265.0" layoutY="146.0" onAction="#getLastName" prefHeight="25.0" prefWidth="228.0" />
-        <Button layoutX="283.0" layoutY="189.0" mnemonicParsing="false" onAction="#checkUserInDatabase" text="Sprawdź użytkownika" textFill="#f16823">
+        <TextField layoutX="55.0" layoutY="97.0" onAction="#getName" prefHeight="25.0" prefWidth="228.0" />
+        <TextField layoutX="289.0" layoutY="97.0" onAction="#getLastName" prefHeight="25.0" prefWidth="228.0" />
+        <Button layoutX="294.0" layoutY="128.0" mnemonicParsing="false" onAction="#checkUserInDatabase" text="Sprawdź użytkownika" textFill="#f16823">
             <font>
                 <Font size="20.0" />
             </font>
         </Button>
-        <Button layoutX="283.0" layoutY="522.0" mnemonicParsing="false" onAction="#backMenu" prefHeight="44.0" prefWidth="217.0" text="Wstecz" textFill="#f16823">
+        <Button layoutX="294.0" layoutY="523.0" mnemonicParsing="false" onAction="#backMenu" prefHeight="44.0" prefWidth="217.0" text="Wstecz" textFill="#f16823">
             <font>
                 <Font size="20.0" />
             </font>
         </Button>
-        <Label layoutX="42.0" layoutY="94.0" prefHeight="30.0" prefWidth="206.0" text="Imie uzytkownika" textFill="#f16823">
+        <Label layoutX="88.0" layoutY="67.0" prefHeight="30.0" prefWidth="162.0" text="Imie uzytkownika" textFill="#f16823">
             <font>
                 <Font size="20.0" />
             </font>
         </Label>
-      <Pane layoutX="54.0" layoutY="243.0" prefHeight="268.0" prefWidth="457.0" />
+      <Pane layoutX="15.0" layoutY="186.0" prefHeight="325.0" prefWidth="575.0" />
     </children>
     <opaqueInsets>
         <Insets />

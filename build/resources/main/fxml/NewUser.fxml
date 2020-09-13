@@ -7,31 +7,61 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane prefHeight="600" prefWidth="600" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.NewUserController">
+<Pane prefHeight="1000.0" prefWidth="1900.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.NewUserController">
     <children>
-        <Button layoutX="271.0" layoutY="472.0" mnemonicParsing="false" onAction="#backMenu" prefHeight="44.0" prefWidth="217.0" text="Wstecz" textFill="#f16823">
-            <font>
-                <Font size="20.0" />
-            </font>
-        </Button>
-      <Label layoutX="168.0" layoutY="21.0" prefHeight="30.0" prefWidth="254.0" text="Dodaj nowego użytkownika" textAlignment="CENTER" textFill="#f16823">
+      <Label layoutX="775.0" layoutY="132.0" prefHeight="30.0" prefWidth="254.0" text="Dodaj nowego użytkownika" textAlignment="CENTER" textFill="#f16823">
          <font>
             <Font size="20.0" />
          </font>
       </Label>
-      <Label layoutX="42.0" layoutY="94.0" prefHeight="30.0" prefWidth="206.0" text="Imie uzytkownika" textFill="#f16823">
+      <Label layoutX="649.0" layoutY="205.0" prefHeight="30.0" prefWidth="206.0" text="Imie uzytkownika" textFill="#f16823">
          <font>
             <Font size="20.0" />
          </font>
       </Label>
-      <Label layoutX="42.0" layoutY="143.0" prefHeight="30.0" prefWidth="206.0" text="Nazwisko użytkownika" textFill="#f16823">
+      <Label layoutX="649.0" layoutY="254.0" prefHeight="30.0" prefWidth="206.0" text="Nazwisko użytkownika" textFill="#f16823">
          <font>
             <Font size="20.0" />
          </font>
       </Label>
-      <TextField layoutX="265.0" layoutY="97.0" onAction="#getName" prefHeight="25.0" prefWidth="228.0" />
-      <TextField layoutX="265.0" layoutY="146.0" onAction="#getLastName" prefHeight="25.0" prefWidth="228.0" />
-      <Button layoutX="282.0" layoutY="220.0" mnemonicParsing="false" onAction="#addUserToDatabase" text="Dodaj użytkownika" textFill="#f16823">
+      <TextField layoutX="872.0" layoutY="208.0" onAction="#getName" prefHeight="25.0" prefWidth="228.0" />
+      <TextField layoutX="872.0" layoutY="257.0" onAction="#getLastName" prefHeight="25.0" prefWidth="228.0" />
+      <Button layoutX="889.0" layoutY="331.0" mnemonicParsing="false" onAction="#addUserToDatabase" text="Dodaj użytkownika" textFill="#f16823">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="25.0" layoutY="361.0" mnemonicParsing="false" onAction="#closeApp" prefHeight="44.0" prefWidth="217.0" text="Zamknij" textFill="#f16823">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button contentDisplay="TOP" layoutX="25.0" layoutY="35.0" mnemonicParsing="false" onAction="#newUser" prefHeight="44.0" prefWidth="217.0" text="Nowy użytkownik" textAlignment="CENTER" textFill="#f16823">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="25.0" layoutY="198.0" mnemonicParsing="false" onAction="#newDevice" prefHeight="44.0" prefWidth="217.0" text="Nowe urządzenie" textFill="#f16823">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="25.0" layoutY="89.0" mnemonicParsing="false" onAction="#seeUser" prefHeight="44.0" prefWidth="217.0" text="Pokaż użytkowników" textFill="#f16823">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="25.0" layoutY="252.0" mnemonicParsing="false" onAction="#seeDevice" prefHeight="44.0" prefWidth="217.0" text="Pokaż sprzęt" textFill="#f16823">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="25.0" layoutY="143.0" mnemonicParsing="false" onAction="#checkUser" text="Sprawdz użytkownika" textFill="#f16823">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="25.0" layoutY="307.0" mnemonicParsing="false" onAction="#checkDevice" prefHeight="44.0" prefWidth="217.0" text="Sprawdz sprzęt" textFill="#f16823">
          <font>
             <Font size="20.0" />
          </font>
