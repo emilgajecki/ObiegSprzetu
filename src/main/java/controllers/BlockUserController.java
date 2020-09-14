@@ -137,4 +137,19 @@ public class BlockUserController {
         mainControllers.setScreen(pane);
     }
 
+    @FXML
+    public void getName(){
+
+    }
+
+    @FXML
+    public void getLastName(){
+
+    }
+
+    @FXML
+    public void checkUserInDatabase(){
+
+    }
+
 }

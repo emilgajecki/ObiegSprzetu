@@ -35,7 +35,7 @@
             </font>
         </Label>
         <Pane layoutX="15.0" layoutY="186.0" prefHeight="325.0" prefWidth="575.0" />
-        <MenuBar id="menu" layoutY="2.0" prefHeight="25.0" prefWidth="306.0">
+        <MenuBar id="menu" layoutY="2.0" prefHeight="25.0" prefWidth="400.0">
             <menus>
                 <Menu mnemonicParsing="false" text="Nowy">
                     <items>

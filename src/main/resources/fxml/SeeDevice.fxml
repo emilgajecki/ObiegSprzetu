@@ -28,7 +28,7 @@
                 <Font size="20.0" />
             </font>
         </Label>
-        <MenuBar id="menu" layoutY="2.0" prefHeight="25.0" prefWidth="306.0">
+        <MenuBar id="menu" layoutY="2.0" prefHeight="25.0" prefWidth="400.0">
             <menus>
                 <Menu mnemonicParsing="false" text="Nowy">
                     <items>
