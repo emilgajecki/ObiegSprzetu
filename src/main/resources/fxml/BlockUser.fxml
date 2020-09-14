@@ -36,6 +36,11 @@
                         <MenuItem mnemonicParsing="false" onAction="#checkDevice" text="Sprzęt" />
                     </items>
                 </Menu>
+                <Menu mnemonicParsing="false" text="Obieg sprzętu" >
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#hardwareRelease" text="Wydanie sprzętu" />
+                    </items>
+                </Menu>
                 <Menu mnemonicParsing="false" text="Zablokuj">
                     <items>
                         <MenuItem mnemonicParsing="false" onAction="#blockUser" text="Użytkownika" />

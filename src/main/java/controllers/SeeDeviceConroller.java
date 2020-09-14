@@ -119,6 +119,11 @@ public class SeeDeviceConroller {
     }
 
     @FXML
+    public void hardwareRelease(){
+
+    }
+
+    @FXML
     public void blockUser(){
         FXMLLoader loader = new FXMLLoader(this.getClass().getResource("/fxml/BlockUserController.fxml"));
         Pane pane = null;
