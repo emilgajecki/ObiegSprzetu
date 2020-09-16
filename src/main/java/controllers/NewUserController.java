@@ -11,8 +11,10 @@ import java.io.IOException;
 public class NewUserController {
 
     private MainControllers mainControllers;
-    private TextField name;
-    private TextField lastName;
+    @FXML
+    private TextField getName;
+    @FXML
+    private TextField getLastName;
 
 
     public void setMainControllers(MainControllers mainControllers) {
@@ -22,14 +24,6 @@ public class NewUserController {
 
     @FXML
     public void addUserToDatabase(){
-    }
-
-    public TextField getName() {
-        return name;
-    }
-
-    public TextField getLastName() {
-        return lastName;
     }
 
     @FXML

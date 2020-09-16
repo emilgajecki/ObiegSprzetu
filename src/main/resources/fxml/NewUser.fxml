@@ -27,8 +27,8 @@
             <Font size="20.0" />
          </font>
       </Label>
-      <TextField layoutX="731.0" layoutY="209.0" onAction="#getName" prefHeight="25.0" prefWidth="228.0" />
-      <TextField layoutX="731.0" layoutY="258.0" onAction="#getLastName" prefHeight="25.0" prefWidth="228.0" />
+      <TextField fx:id="getFirstName" layoutX="731.0" layoutY="209.0" prefHeight="25.0" prefWidth="228.0" text="Wprowadź Imię" />
+      <TextField fx:id="getLastName" layoutX="731.0" layoutY="258.0" prefHeight="25.0" prefWidth="228.0" text="Wprowadź Nazwisko" />
       <Button layoutX="763.0" layoutY="323.0" mnemonicParsing="false" onAction="#addUserToDatabase" text="Dodaj użytkownika" textFill="#f16823">
          <font>
             <Font size="20.0" />
@@ -54,7 +54,7 @@
                         <MenuItem mnemonicParsing="false" onAction="#checkDevice" text="Sprzęt" />
                     </items>
                 </Menu>
-                <Menu mnemonicParsing="false" text="Obieg sprzętu" >
+                <Menu mnemonicParsing="false" text="Obieg sprzętu">
                     <items>
                         <MenuItem mnemonicParsing="false" onAction="#hardwareRelease" text="Wydanie sprzętu" />
                     </items>
